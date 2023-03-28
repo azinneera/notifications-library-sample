@@ -1,0 +1,6 @@
+[package]
+org = "asmaj"
+name = "notifications"
+version = "0.2.0"
+distribution = "2201.4.0"
+export = ["notifications", "notifications.util"]
