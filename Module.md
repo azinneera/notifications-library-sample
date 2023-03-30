@@ -9,10 +9,3 @@ Here's an example of how you can use the SMS API to send a notification:
 configurable notifications:TwilioConfig twilioConfig = ?;
 error? sendSmsResult = sendSms("0094077123456", "hello there!", twilioConfig);
 ```
-
-#### Using the Email API to send a notification
-Here's an example of how you can use the SMS API to send a notification:
-```ballerina
-configurable notifications:SMTPConfig smtpConfig = ?;
-error? sendSmsResult = sendSms("0094077123456", "hello there!", twilioConfig);
-```

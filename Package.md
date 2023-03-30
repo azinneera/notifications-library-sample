@@ -1,7 +1,6 @@
 # Package Overview
-This notification library provides APIs to send SMS and Email notifications.
+This notification library provides two simple APIs related to sending SMS.
 
 ## Features
 * Send SMS notifications using Twillio.
-* Send Email notifications using SMTP.
-* A utility API to format the message string.
+* A utility to format a message string.
