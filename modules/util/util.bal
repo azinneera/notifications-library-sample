@@ -1,10 +1,9 @@
-import ballerina/regex;
-
 # Formats a string by replacing all tabs and multiple spaces with a single space.
 #
 # + message - message as a string
-# + return - sanitized message
+# + return - formatted message
 public function formatString(string message) returns string {
-    string replacedMessage = regex:replaceAll(message, "\\s+", " ");
+    string:RegExp regex = re `\\s+`;
+    string replacedMessage = regex.replaceAll(message, " ");
     return replacedMessage.trim();
 }

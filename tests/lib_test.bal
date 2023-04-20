@@ -8,4 +8,3 @@ public function testSmsNotifications() returns error? {
     error? sendSmsResult = sendSms(mobileNumber, message, smsTestConfig);
     test:assertFalse(sendSmsResult is error);
 }
-

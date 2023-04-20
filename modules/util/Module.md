@@ -1,11 +1,11 @@
 ## Module Overview
-This module provides APIs to format a message by replacing all tabs and multiple spaces with a single space.
+This module provides APIs to send an SMS and email.
 
 ### Usage
 
-#### Formatting a message 
-Here's an example of how you can use the formatting API to format a message:
+#### Using the SMS API to send a notification
+Here's an example of how you can use the SMS API to send a notification:
 ```ballerina
-String message = "Hello, World!";
-notifications:formatMessage(message)
+configurable notifications:TwilioConfig twilioConfig = ?;
+error? sendSmsResult = sendSms("0094077123456", "hello there!", twilioConfig);
 ```
